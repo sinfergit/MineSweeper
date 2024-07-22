@@ -28,7 +28,7 @@ public class InitializeGrisUseCaseTest
         UseCaseResponse<MineGrid> response = _initializeGridUseCase.Execute(size, minesCount);
         
         
-        Assert.True(response is { Success: true, Data.Cells.Length: 5 });
+        Assert.True(response is { Success: true, Data.Cells.Length: 25 });
     }
     
     [InlineData("100","6",10)]
