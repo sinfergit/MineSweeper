@@ -23,4 +23,4 @@ To run unit tests, use the following command: dotnet test
 
 ## Logging
 
-Logs are managed using Serilog and are configured to output to various sinks as specified in the Serilog configuration.
+Logs are managed using Serilog and are configured to output to file sinks as specified in the application startup. Log file will be created inside the parent application directory due to the conflicts that may occur due to the difference in dev environment file systems 
